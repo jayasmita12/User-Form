@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.header-div h1{
+    text-align: center;
+    background-color: gray;
+    padding: 8px;
+    
+}
+a{
+    color:000000
+}
+p:first-child{
+    color:red
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: gray;
+    padding:10px 60px;
+}
+.show-result{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+}
+td{
+    background-color: aqua;
+}
+tbody td{
+    text-align: center;
+    font-size: 20px;
+    
+}
+.newuser{
+    text-align: center;
+    font-size: 25px;
+}
