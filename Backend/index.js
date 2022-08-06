@@ -1,0 +1,17 @@
+const express = require("express")
+const dotenv= require("dotenv")
+const router = require("./server/router/router")
+const connectDB = require("./server/configs/db")
+const bodyparser= require("body-parser")
+const cors = require("cors")
+const app = express()
+dotenv.config()
+
+app.use(cors())
+app.use(express.json())
+// app.use(morgan("tiny"))
+connectDB()
+app.use(bodyparser.urlencoded({extended:true}))
+app.use("/",router)
+const PORT = process.env.PORT
+app.listen(PORT,console.log(`Server running in PORT ${PORT}`))
