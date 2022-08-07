@@ -45,7 +45,7 @@ const appenddata=(data)=>{
         span2.style="cursor:pointer"
         let id = e._id
         span2.onclick=async()=>{
-            let req = await fetch(`http://localhost:6700/api/users/${id}`,{
+            let req = await fetch(`https://registration-user-form.herokuapp.com/api/users/${id}`,{
                 method:"delete"
             })
             let data =await req.json()
