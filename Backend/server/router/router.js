@@ -1,3 +1,4 @@
+const { Router } = require("express")
 const express= require("express")
 const {  getuser, updateUser, deleteUser, createNewuser } = require("../controllers/userController")
 const route=express.Router()
@@ -14,6 +15,9 @@ route.get("/show-updated-user",(req,res)=>{
 })
 
 //API
+route.get("/",(req,res)=>{
+    res.send("Hello world!")
+})
 route.post("/api/users",createNewuser)
 route.get("/api/users",getuser)
 route.put("/api/users/:id",updateUser)
