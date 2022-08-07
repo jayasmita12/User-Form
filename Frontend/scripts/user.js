@@ -1,7 +1,7 @@
 
 let tablediv = document.getElementById("data")
 let count=1
-let url="http://localhost:6700/api/users";
+let url="https://registration-user-form.herokuapp.com/api/users";
 
 const fetchapi = async()=>{
     let res = await fetch(url)
